@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script type="text/javascript">
+        function validate() {
+        
+        if( document.formulario.nombre.value == "" ) {
+            alert( "Por favor ingresa tu nombre!" );
+            document.formulario.nombre.focus() ;
+            return false;
+        }
+        if( document.formulario.apellido.value == "" ) {
+            alert( "Por favor ingresa tu apeliido!" );
+            document.formulario.apellido.focus() ;
+            return false;
+        }
+        if( document.formulario.telefono.value == "" ) {
+            alert( "Por favor ingresa tu telefono!" );
+            document.formulario.telefono.focus() ;
+            return false;
+        }
+        if( document.formulario.email.value == "" ) {
+            alert( "Por favor ingresa tu Email!" );
+            document.myForm.email.focus() ;
+            return false;
+        }
+        if( document.formulario.consulta.value == "" ) {
+            alert( "Por favor ingresa tu consulta!" );
+            document.myForm.consulta.focus() ;
+            return false;
+        }
+        return( true );
+        }
+    </script>
+    
+    <title>Market IoT - Productos</title>
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Logo">
+        <div>Market IoT</div> 
+        <div></div>
+        <div class="icon">
+            <a href="https://www.whatsapp.com" target="_blank" class="wa"><i class="fab fa-whatsapp fa-2x"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="face"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="ins"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="tw"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html" >Nosotros</a></li>
+            <li><a href="contacto.html" class="select">Contacto</a></li>
+        </ul>
+
+
+
+    </nav>
+    <main>
+        <h1>Contacto:</h1>
+        <form name="formulario" action="#" onsubmit = "return(validate());">
+            <div>
+                <label>Nombre: </label>
+                <input name="nombre" type="text">
+            </div>
+            <div>
+                <label>Apellido: </label>
+                <input name="apellido" type="text">
+            </div>
+            <div>
+                <label>Telefono: </label>
+                <input name="telefono" type="tel" placeholder="Sin 0 ni 15">
+            </div>
+            <div>
+                <label>email: </label>
+                <input name="email" type="email" required>
+            </div>
+            <div>
+                <label>Como nos conociste:</label>
+                <select>
+                    <option value="">Me lo recomendo un amigo</option>
+                    <option value="">Redes</option>
+                    <option value="">Publicidad</option>
+                    <option value="" selected>Otros</option>
+                </select>
+            </div>
+            <div>
+                <label>Consulta: </label>
+                <input name="consulta" type="text"> 
+            </div>
+            <div class="boton" ><input type="submit" value="Enviar" id="btn"></div>
+        </form>
+    </main>
+    <footer>
+        <div>Todos los derechos reservados. 2022</div> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:1.2rem;
+
+}
+body{
+    background-color: rgb(217, 250, 236);
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 0px;
+}
+header{
+    height: 5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    background: rgb(0, 212, 124);
+    border-bottom: 3px solid rgb(2, 63, 37);
+
+}
+header img{
+    width: 3rem;
+    display: inline;
+    vertical-align: middle;  
+    margin-top: 1rem; 
+    margin-left: 1rem;
+}
+header div{
+    display: inline;
+    vertical-align: middle;
+    margin-top: 1.7rem; 
+    margin-left: 1rem;
+
+}
+header div.icon{
+    margin-top: 1.25rem;
+}
+header a{
+    display: inline;
+    margin-right: 1rem;
+    color: black;
+}
+header a.wa:hover{
+    color:rgb(117, 235, 0);
+}
+header a.face:hover{
+    color:rgb(0, 17, 255);
+}
+header a.ins:hover{
+    color:rgb(250, 3, 106);
+}
+header a.tw:hover{
+    color:rgb(71, 104, 255);
+}
+nav{
+    height: 2.5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(110, 226, 180);
+}
+nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto 1fr;
+    gap: 0px;
+    list-style: none;
+
+    
+}
+nav ul li a{
+    display: block;
+    height: 2rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover, .select{
+    background-color: rgb(41, 100, 77);
+    color: white;
+}
+main{
+    grid-column: 1;
+    padding: 2rem 3rem;
+    background-color: rgb(217, 250, 236);
+}
+aside{
+    grid-column: 2;
+}
+
+footer{
+    height: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(0, 87, 51);
+    text-align: center;
+    
+}
+footer div{
+    font-size: 1rem;
+    padding: 0.4rem 0rem;
+    color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header{
+        grid-template-columns: auto auto 1fr auto;
+        height: 6.5rem;
+    }
+    header div.icon{
+        margin: 0rem;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 2;
+        transform: scale(0.5);
+    }
+
+    nav{
+        height: 5rem;
+    }
+    nav ul{
+        grid-template-columns: auto auto;
+    }
+    nav ul li{
+        text-align: center;
+    }
+
+}
+/* Small devices (portrait tablets and large phone
+s, 600px and up) */
+@media only screen and (max-width: 800px) {
+    main, aside{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    aside iframe{
+        width: 100%;
+    }
+}

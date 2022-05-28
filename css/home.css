@@ -1,0 +1,26 @@
+main h2{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+aside p{
+    width: 250px;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+aside{
+    background-color: rgb(110, 226, 180);
+    border-left: 3px solid rgb(2, 63, 37);
+    padding: 1rem;
+}
+
+aside div{
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    aside p{
+        width: auto;
+    }
+}

@@ -1,0 +1,30 @@
+body{
+    grid-template-columns: auto;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.item img{
+    width: 150px;
+    height: 150px;
+
+}
+.item{
+    padding: 20px;
+    background-color: white;
+    border-radius: 15%;
+    margin: 0.6rem;
+    border: 3px solid rgb(0, 87, 51);
+}
+.item:hover{
+    transform: scale(1.2);
+    transition-duration: 1s
+}
+.item div{
+    background-color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
